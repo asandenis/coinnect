@@ -1,0 +1,121 @@
+.login-register-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1b1b1b;
+    color: white;
+  }
+
+  .logo-container {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+  }
+
+  #logo-login {
+    cursor: pointer;
+    width: 175px;
+    margin-top: 5px;
+    margin-left: 5px;
+    transition: all 0.3s;
+  }
+
+  #logo-login:hover {
+    width: 200px;
+    transition: all 0.3s;
+  }
+  
+  .login-register-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .login-register-header h1 {
+    margin-top: 50px;
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .login-register-header p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .form-container {
+    background: linear-gradient(135deg, #635ac7, #9f71e4);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    outline: none;
+    color: #333;
+  }
+  
+  .form-group input::placeholder {
+    color: #888;
+  }
+  
+  .form-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #635ac7;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .form-button:hover {
+    background-color: #5145b3;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  
+  .toggle-mode {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .toggle-mode p {
+    font-size: 14px;
+  }
+  
+  .toggle-link {
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+  
+  .toggle-link:hover {
+    color: #eceaea;
+    font-size: 16px;
+    transition: all 0.3s;
+  }

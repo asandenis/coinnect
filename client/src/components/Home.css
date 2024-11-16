@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #1b1b1b;
+    color: white;
+  }
+  
+  .home-header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  #logo {
+    width: 175px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  #logo:hover {
+    width: 200px;
+    transition: all 0.3s;
+  }
+
+  #home-gif {
+  }
+  
+  .login-button {
+    background-color: white;
+    color: #635ac7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    transition: all 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #9f71e4;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .hero-content {
+    margin-top: 200px;
+    flex: 1;
+  }
+  
+  .hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #ffffff;
+    color: #635ac7;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #9f71e4;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 200px;
+  }
+  
+  .features-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature {
+    flex: 1;
+    margin: 10px;
+    margin-top: 20px;
+  }
+  
+  .feature h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 16px;
+  }
+
+  .home-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #home-icon {
+    width: 30px;
+    margin-bottom: 10px;
+  }
