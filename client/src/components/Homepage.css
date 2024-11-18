@@ -1,0 +1,137 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .homepage-header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo-homepage img {
+    width: 175px;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .logo-homepage img:hover {
+    width: 200px;
+    transition: all 0.3s;
+  }
+
+  .user-profile {
+    background: linear-gradient(135deg, #635ac7, #9f71e4);
+    margin-right: 5px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+  }
+
+  .user-profile:hover {
+    background: linear-gradient(90deg, #9f71e4, #635ac7);
+    width: 65px;
+    height: 65px;
+    transition: all 0.3s;
+  }
+  
+  .user-profile .user-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .user-profile .user-image:hover {
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s;
+  }
+  
+  .secondary-header {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .action-button {
+    margin-top: 100px;
+    background-color: white;
+    color: #635ac7;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    transition: all 0.3s;
+  }
+  
+  .action-button:hover,
+  .action-button.active {
+    background-color: #9f71e4;
+    color: #ffffff;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  
+  .content-section {
+    flex: 1;
+    padding: 20px;
+    background-color: #121212;
+    min-height: 465px;
+  }
+  
+  .welcome-message h2,
+  .sell-section h2,
+  .buy-section h2 {
+    font-size: 50px;
+    color: #ffffff;
+  }
+
+  .welcome-message p {
+    margin-top: 10px;
+    font-size: 24px;
+  }
+  
+  .sell-options,
+  .buy-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 50px;
+  }
+  
+  .crypto-option {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .crypto-option:hover {
+    background-color: #f1f1f1;
+  }
+
+  .homepage-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

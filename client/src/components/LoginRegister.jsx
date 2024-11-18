@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './LoginRegister.css';
+import Alert from './Alert';
 
 const LoginRegister = () => {
   const [isLogin, setIsLogin] = useState(true);
@@ -11,6 +12,7 @@ const LoginRegister = () => {
     email: '',
     password: '',
   });
+  const [alert, setAlert] = useState({ message: '', type: '' });
   const navigate = useNavigate();
 
   const toggleMode = () => {
@@ -23,27 +25,55 @@ const LoginRegister = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
+    if (!isLogin) {
+      const password = formData.password;
+      const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+  
+      if (!passwordRegex.test(password)) {
+        setAlert({
+          message:
+            'Password must be at least 8 characters long and include uppercase letters, lowercase letters, numbers, and special characters.',
+          type: 'error',
+        });
+        return;
+      }
+    }
+  
     try {
       if (isLogin) {
         const response = await axios.post('http://localhost:5000/auth/login', {
           email: formData.email,
           password: formData.password,
         });
-        navigate('/homepage');
+        setAlert({ message: 'Login successful!', type: 'success' });
+        setTimeout(() => navigate('/homepage'), 2000);
       } else {
         const response = await axios.post('http://localhost:5000/auth/register', formData);
-        alert('Registration successful');
+        setAlert({ message: 'Registration successful!', type: 'success' });
         toggleMode();
       }
     } catch (error) {
-      alert(error.response?.data?.message || 'Something went wrong');
+      setAlert({ message: error.response?.data?.message || 'Something went wrong', type: 'error' });
     }
-  };
+  };  
 
   return (
     <div className="login-register-container">
-      <div className='logo-container'>
-        <img src='https://i.imgur.com/lhnGyhS.png' alt='coinnect logo' id='logo-login' onClick={() => navigate('/')}></img>
+      {alert.message && (
+        <Alert
+          message={alert.message}
+          type={alert.type}
+          onClose={() => setAlert({ message: '', type: '' })}
+        />
+      )}
+      <div className="logo-container">
+        <img
+          src="https://i.imgur.com/lhnGyhS.png"
+          alt="coinnect logo"
+          id="logo-login"
+          onClick={() => navigate('/')}
+        />
       </div>
       <div className="login-register-header">
         <h1>{isLogin ? 'Login to Coinnect' : 'Register on Coinnect'}</h1>
