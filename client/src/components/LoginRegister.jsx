@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 import './LoginRegister.css';
 import Alert from './Alert';
 
@@ -25,12 +26,10 @@ const LoginRegister = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-  
+
     if (!isLogin) {
-      const password = formData.password;
       const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-  
-      if (!passwordRegex.test(password)) {
+      if (!passwordRegex.test(formData.password)) {
         setAlert({
           message:
             'Password must be at least 8 characters long and include uppercase letters, lowercase letters, numbers, and special characters.',
@@ -39,24 +38,28 @@ const LoginRegister = () => {
         return;
       }
     }
-  
+
     try {
       if (isLogin) {
         const response = await axios.post('http://localhost:5000/auth/login', {
           email: formData.email,
           password: formData.password,
         });
+      
+        // Save the token in cookies
+        Cookies.set('authToken', response.data.token, { expires: 1 }); // Expires in 1 day
+      
         setAlert({ message: 'Login successful!', type: 'success' });
-        setTimeout(() => navigate('/homepage'), 2000);
+        setTimeout(() => navigate('/homepage'), 2000);      
       } else {
-        const response = await axios.post('http://localhost:5000/auth/register', formData);
+        await axios.post('http://localhost:5000/auth/register', formData);
         setAlert({ message: 'Registration successful!', type: 'success' });
         toggleMode();
       }
     } catch (error) {
       setAlert({ message: error.response?.data?.message || 'Something went wrong', type: 'error' });
     }
-  };  
+  };
 
   return (
     <div className="login-register-container">
