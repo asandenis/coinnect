@@ -1,0 +1,100 @@
+.wallet-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .wallet-modal-content {
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .wallet-modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+  }
+  
+  .wallet-modal-info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .wallet-modal-image {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  .wallet-modal-coinbalance {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+
+  .wallet-coinbalance-actions {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .wallet-coinbalance-actions p {
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s;
+  }
+
+  .wallet-coinbalance-actions p:first-child {
+    background-color: rgb(80, 213, 93);
+  }
+
+  .wallet-coinbalance-actions p:nth-child(2) {
+    background-color: rgb(213, 186, 80);
+  }
+
+  .wallet-coinbalance-actions p:first-child:hover {
+    background-color: rgb(55, 172, 67);
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+
+  .wallet-coinbalance-actions p:nth-child(2):hover {
+    background-color: rgb(175, 150, 50);
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  
+  .wallet-modal-line {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+  }
+  
+  .wallet-modal-placeholder {
+    height: 100px;
+    background-color: #1d1d1d;
+    border: 1px dashed #ccc;
+    border-radius: 4px;
+  }
+  
+  .wallet-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }  

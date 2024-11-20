@@ -15,7 +15,29 @@
     border-bottom: 1px solid #545454;
     padding-bottom: 8px;
     margin-bottom: 8px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .user-info-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #user-info-edit {
+    width: 15px;
+    height: 15px;
+    margin: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  #user-info-edit:hover {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s;
   }
   
   .user-info-header h3 {
@@ -23,22 +45,76 @@
     font-size: 20px;
     color: #ffffff;
     margin-bottom: 5px;
+    text-align: left;
+    margin-left: 15px;
   }
   
   .user-info-header p {
     margin: 0;
     font-size: 0.9em;
     color: #777;
+    margin-left: 30px;
+  }
+
+  .user-info-wallet {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid #545454;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+
+  #user-info-wallet-icon {
+    width: 15px;
+    height: 15px;
+    transition: all 0.3s;
+  }
+
+  #user-info-wallet-icon:hover {
+    width: 18px;
+    height: 18px;
+    transition: all 0.3s;
+  }
+
+  .user-info-wallet p {
+    margin-left: 15px;
+    transition: all 0.3s;
+  }
+
+  .user-info-wallet p:hover {
+    font-size: 18px;
+    transition: all 0.3s;
   }
   
   .user-info-body {
     margin-bottom: 10px;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .user-info-rank {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #user-info-rank-badge {
+    width: 30px;
+    height: 30px;
   }
   
   .user-info-body p {
     margin: 5px 0;
     color: #777;
+    margin-left: 5px;
+  }
+
+  #user-info-xp {
+    margin-left: 35px;
   }
   
   .logout-button {

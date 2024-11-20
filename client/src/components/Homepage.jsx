@@ -42,6 +42,10 @@ const Homepage = () => {
     setIsUserInfoOpen((prevState) => !prevState);
   };
 
+  const profileImagePath = userData.profilePicture 
+    ? require(`../media/uploads/profile-pictures/${userData.profilePicture}`) 
+    : 'https://via.placeholder.com/50';
+
   return (
     <div className="homepage">
       <header className="homepage-header">
@@ -50,7 +54,7 @@ const Homepage = () => {
         </div>
         <div className="user-profile" onClick={toggleUserInfo}>
           <img
-            src={userData.profilePicture || 'https://via.placeholder.com/50'}
+            src={profileImagePath}
             alt="User"
             className="user-image"
           />
