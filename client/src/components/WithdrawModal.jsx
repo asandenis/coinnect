@@ -3,7 +3,7 @@ import './WithdrawModal.css';
 import ConfirmActionModal from './ConfirmActionModal';
 import axios from 'axios';
 
-const WithdrawModal = ({ userData, onClose, updateUserCoins }) => {
+const WithdrawModal = ({ userData, onClose }) => {
   const [walletAddress, setWalletAddress] = useState('');
   const [isConfirmModalOpen, setIsConfirmModalOpen] = useState(false);
   const [withdrawAmount, setWithdrawAmount] = useState(userData.coinnectCoins);

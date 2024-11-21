@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import './AddCoinsModal.css';
 import ConfirmActionModal from './ConfirmActionModal';
+import axios from 'axios';
 
-const AddCoinsModal = ({ userData, onClose, updateUserCoins }) => {
+const AddCoinsModal = ({ userData, onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     creditCardNumber: '',
@@ -22,7 +23,19 @@ const AddCoinsModal = ({ userData, onClose, updateUserCoins }) => {
 
   const handleConfirm = async (confirmed) => {
     if (confirmed) {
-      updateUserCoins(parseInt(formData.amount));
+      try {
+        const response = await axios.put(
+          `http://localhost:5000/auth/update-coins/${userData.username}`,
+          { coinnectCoins: parseInt(formData.amount) }
+        );
+        if (response.data.success) {
+          userData.coinnectCoins += parseInt(formData.amount);
+        } else {
+          console.error('Coin adding failed');
+        }
+      } catch (error) {
+        console.error('Error during coin adding:', error);
+      }
     }
     setIsConfirmModalOpen(false);
     onClose();
