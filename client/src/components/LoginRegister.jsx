@@ -46,8 +46,7 @@ const LoginRegister = () => {
           password: formData.password,
         });
       
-        // Save the token in cookies
-        Cookies.set('authToken', response.data.token, { expires: 1 }); // Expires in 1 day
+        Cookies.set('authToken', response.data.token, { expires: 1 });
       
         setAlert({ message: 'Login successful!', type: 'success' });
         setTimeout(() => navigate('/homepage'), 2000);      

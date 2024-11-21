@@ -1,0 +1,41 @@
+.add-coins-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .add-coins-modal-content {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .add-coins-modal-content h2 {
+    margin-bottom: 20px;
+  }
+  
+  .add-coins-modal-content input {
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #555;
+    color: #ffffff;
+    transition: all 0.3s;
+  }
+  
+  .add-coins-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }

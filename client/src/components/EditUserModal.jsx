@@ -84,7 +84,7 @@ const EditUserModal = ({ userData, onClose, handleLogout }) => {
     try {
       const response = await axios.delete(`http://localhost:5000/auth/delete/${userData.username}`);
       if (response.data.success) {
-        handleLogout(); // Log the user out
+        handleLogout();
       } else {
         setAlert({ show: true, message: response.data.message, type: 'error' });
       }

@@ -1,0 +1,64 @@
+{
+    "cryptocurrencies": [
+      {
+        "symbol": "BTC",
+        "logo": "https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+      },
+      {
+        "symbol": "ETH",
+        "logo": "https://cryptologos.cc/logos/ethereum-eth-logo.png"
+      },
+      {
+        "symbol": "BNB",
+        "logo": "https://cryptologos.cc/logos/binance-coin-bnb-logo.png"
+      },
+      {
+        "symbol": "ADA",
+        "logo": "https://cryptologos.cc/logos/cardano-ada-logo.png"
+      },
+      {
+        "symbol": "SOL",
+        "logo": "https://cryptologos.cc/logos/solana-sol-logo.png"
+      },
+      {
+        "symbol": "XRP",
+        "logo": "https://cryptologos.cc/logos/ripple-xrp-logo.png"
+      },
+      {
+        "symbol": "DOGE",
+        "logo": "https://cryptologos.cc/logos/dogecoin-doge-logo.png"
+      },
+      {
+        "symbol": "DOT",
+        "logo": "https://cryptologos.cc/logos/polkadot-dot-logo.png"
+      },
+      {
+        "symbol": "LTC",
+        "logo": "https://cryptologos.cc/logos/litecoin-ltc-logo.png"
+      },
+      {
+        "symbol": "MATIC",
+        "logo": "https://cryptologos.cc/logos/polygon-matic-logo.png"
+      },
+      {
+        "symbol": "SHIB",
+        "logo": "https://cryptologos.cc/logos/shiba-inu-shib-logo.png"
+      },
+      {
+        "symbol": "AVAX",
+        "logo": "https://cryptologos.cc/logos/avalanche-avax-logo.png"
+      },
+      {
+        "symbol": "UNI",
+        "logo": "https://cryptologos.cc/logos/uniswap-uni-logo.png"
+      },
+      {
+        "symbol": "LINK",
+        "logo": "https://cryptologos.cc/logos/chainlink-link-logo.png"
+      },
+      {
+        "symbol": "BCH",
+        "logo": "https://cryptologos.cc/logos/bitcoin-cash-bch-logo.png"
+      }
+    ]
+  }  

@@ -8,14 +8,14 @@ import expertBadge from '../media/expert-badge.png';
 import masterBadge from '../media/master-badge.png';
 import walletIcon from '../media/wallet-icon.png';
 import EditUserModal from './EditUserModal';
-import WalletModal from './WalletModal'; // Import the WalletModal
+import WalletModal from './WalletModal';
 
 const UserInfo = ({ userData, handleLogout, isOpen, toggleOpen }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isWalletModalOpen, setIsWalletModalOpen] = useState(false); // State for wallet modal
+  const [isWalletModalOpen, setIsWalletModalOpen] = useState(false);
 
   const toggleModal = () => setIsModalOpen(!isModalOpen);
-  const toggleWalletModal = () => setIsWalletModalOpen(!isWalletModalOpen); // Toggle wallet modal
+  const toggleWalletModal = () => setIsWalletModalOpen(!isWalletModalOpen);
 
   if (!isOpen) return null;
 

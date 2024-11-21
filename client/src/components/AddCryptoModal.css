@@ -1,0 +1,50 @@
+.add-crypto-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .add-crypto-modal-content {
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-crypto-modal-content h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .add-crypto-modal-content input,
+  .add-crypto-modal-content select {
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 7px;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #555;
+    color: #ffffff;
+    transition: all 0.3s;
+    width: 100%;
+  }
+  
+  .add-crypto-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .crypto-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }  

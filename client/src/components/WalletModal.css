@@ -50,7 +50,7 @@
 
   .wallet-coinbalance-actions p {
     cursor: pointer;
-    padding: 5px;
+    padding: 7px;
     margin-right: 10px;
     border-radius: 5px;
     font-size: 15px;
@@ -67,7 +67,7 @@
 
   .wallet-coinbalance-actions p:first-child:hover {
     background-color: rgb(55, 172, 67);
-    font-size: 18px;
+    font-size: 16px;
     transition: all 0.3s;
   }
 
@@ -87,14 +87,70 @@
     background-color: #1d1d1d;
     border: 1px dashed #ccc;
     border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    align-items: center;
+  }
+
+  .wallet-modal-placeholder::-webkit-scrollbar {
+    display: none;
   }
   
-  .wallet-modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    font-size: 1.5rem;
+  .wallet-modal-placeholder {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .user-cryptos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .crypto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 15px;
+    text-align: left;
+    background-color: #0e0e0e;
+    min-width: 100px;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .crypto-info button {
     cursor: pointer;
-  }  
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: all 0.3s;
+    background-color: rgb(213, 186, 80);
+    color: #ffffff;
+    border: 0;
+    margin-top: 5px;
+  }
+
+  .crypto-info button:hover {
+    background-color: rgb(175, 150, 50);
+    font-size: 14px;
+    transition: all 0.3s;
+  }
+
+  .crypto-info-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .crypto-logo {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }

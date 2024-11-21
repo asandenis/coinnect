@@ -1,0 +1,79 @@
+.buy-crypto-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .buy-crypto-modal-content {
+    background: #1b1b1b;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .buy-crypto-modal-content h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .buy-crypto-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  
+  .crypto-price {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 15px;
+  }
+
+  .buy-crypto-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .buy-crypto-modal-content input {
+    border: 0px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #555;
+    color: #ffffff;
+    transition: all 0.3s;
+    width: 100%;
+  }
+  
+  .buy-crypto-modal-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+
+  .crypto-price-coinnectCoins {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .crypto-price-coinnectCoins img {
+    margin-right: 10px;
+  }
+
+  .buy-crypto-modal-actions button:first-child {
+    margin-right: 40px;
+  }
